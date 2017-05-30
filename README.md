@@ -26,7 +26,7 @@ Use the array to provide feedback to users as they type. Use the example below t
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
 
-  var username = $("#username").val();/n
+  var username = $("#username").val();                                                                                    
   var password = $("#password").val();
  
 From this point you will need to verify the strength of your users password to prevent their information being stolen
