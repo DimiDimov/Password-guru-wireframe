@@ -9,7 +9,7 @@ Get the source code by either copy and pasting the FrontEndPassStrengthCheck.js 
 
 
 2.
-In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.                                    
+In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.                                                 
 **<script src="FrontEndPassStrengthCheck.js"></script>**
 
 3.
