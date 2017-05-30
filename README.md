@@ -9,8 +9,8 @@ Get the source code by either copy and pasting the FrontEndPassStrengthCheck.js 
 
 
 2.
-In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.
-<script src="FrontEndPassStrengthCheck.js"></script>
+In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.                                    
+**<script src="FrontEndPassStrengthCheck.js"></script>**
 
 3.
 From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:
