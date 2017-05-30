@@ -5,7 +5,7 @@ Password Guru is a library that makes it simple to help your users make safe pas
 To get Password guru set up to work on your site it just takes 4 easy steps:
 
 1. 
-Get the source code by either copy and pasting the FrontEndPassStrengthCheck.js or using git clone then dragging the file into your repository.
+Get the source code by either copy and pasting the **FrontEndPassStrengthCheck.js** or using git clone then dragging the file into your repository.
 
 
 2.
@@ -13,8 +13,8 @@ In your html include a reference to  FrontEndPassStrengthCheck.js like shown bel
 **<script src="FrontEndPassStrengthCheck.js"></script>**
 
 3.
-From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:
-passguruReturnArray = guruStrengthTest(username, password);
+From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:                                                                                                   
+**passguruReturnArray = guruStrengthTest(username, password);**
 
 you will be returned an array that was determined using our algorithms. 
 
@@ -25,14 +25,14 @@ Use the array to provide feedback to users as they type. Use the example below t
 
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
-
+**
   var username = $("#username").val();                                                                                    
   var password = $("#password").val();
- 
+**
 From this point you will need to verify the strength of your users password to prevent their information being stolen
 You can simply call the Password Guru function check strength                                                                          
 
-  var strengthResult = guruStrengthTest(username, password);
+**  var strengthResult = guruStrengthTest(username, password); **
   
 The strengthResult array that is returned is in the form                                                                          
 [                                                                                                                                 
@@ -46,8 +46,8 @@ A string recommendation that can be displayed to show to the user of how to make
 ]                                                                          
 
 From here you should parse the array and store it into variables like this
-
-passguruReturnArray = guruStrengthTest(user1, pass1);                                                                          
+**
+passguruReturnArray = guruStrengthTest(username, password);                                                                          
 strengthScore = passguruReturnArray[0];                                                                          
 var lengthBool = passguruReturnArray[1];                                                                          
 var commonPassBool = passguruReturnArray[2];                                                                          
@@ -55,7 +55,7 @@ var commonWordBool = passguruReturnArray[3];
 var multipleCommonWordBool = passguruReturnArray[4];       
 var threeLettersInARowBool = passguruReturnArray[5];                                                             
 var recommendationString = = passguruReturnArray[6]; 
-
+**
 
 you can then use these values to easily provide feedback to users, here is an example of some javascript that does this:
 
