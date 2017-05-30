@@ -38,7 +38,7 @@ The strengthResult array that is returned is in the form
 [                                                                                                                                 
 strength score (explaination below),                                                                                   
 A boolean that is 1 if the password is over 8 characters and 0 if it is 8 or less,                                 
-A boolean 1 if the password does not have a password from a common password list, 
+A boolean 1 if the password does not have a password from a common password list,                             
 A boolean 1 if the password does not have a word from a common word list,                                                     
 A boolean 1 if the password is not made of two or more common words,                                                              
 A boolean 1 if the password does not contain more than 3 of the same letter in a row,
