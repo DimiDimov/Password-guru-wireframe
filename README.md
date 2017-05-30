@@ -1,7 +1,7 @@
 # Password-guru-wireframe
 Password Guru is a library that makes it simple to help your users make safe passwords. It provides quick feedback that helps them avoid frustration in the process of creating an account all while checking their passwords against attacks that real hackers use. 
 
-                                                   Quick Setup
+                                                       QUICK SETUP
 To get Password guru set up to work on your site it just takes 4 easy steps:
 
 1. 
@@ -21,7 +21,7 @@ you will be returned an array that was determined using our algorithms.
 4 
 Use the array to provide feedback to users as they type. Use the example below to see how to do this.
 
-                                                  Example
+                                                        EXAMPLE
 
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
@@ -36,13 +36,13 @@ You can simply call the Password Guru function check strength
   
 The strengthResult array that is returned is in the form                                                                          
 [                                                                                                                                 
-strength score (a score between 0-100 that determines how hard the password is to be cracked, a very secure password would be over 80,
-A length boolean that is 1 if the password is over 8 characters and 0 if it is 8 or less,
-A boolean that is 1 if and 0 if,
-A boolean that is 1 if and 0 if,
-A boolean that is 1 if and 0 if,
-A boolean that is 1 if and 0 if,
-A boolean that is 1 if and 0 if
+strength score (explaination below),                                                                                   
+A boolean that is 1 if the password is over 8 characters and 0 if it is 8 or less,                                 
+A boolean 1 if the password does not have a password from a common password list, 
+A boolean 1 if the password does not have a word from a common word list,                                                     
+A boolean 1 if the password is not made of two or more common words,                                                              
+A boolean 1 if the password does not contain more than 3 of the same letter in a row,
+A string recommendation that can be displayed to show to the user of how to make a stronger password,
 ]                                                                          
 
 From here you should parse the array and store it into variables like this
@@ -52,13 +52,30 @@ strengthScore = passguruReturnArray[0];
 var lengthBool = passguruReturnArray[1];                                                                          
 var commonPassBool = passguruReturnArray[2];                                                                          
 var commonWordBool = passguruReturnArray[3];                                                                          
-var multipleCommonWordBool = passguruReturnArray[4];                                                                          
+var multipleCommonWordBool = passguruReturnArray[4];       
+var threeLettersInARowBool = passguruReturnArray[5];
+var recommendationString = = passguruReturnArray[6]; 
 
 
 you can then use these values to easily provide feedback to users, here is an example of some javascript that does this:
 
 
-                                                 SECURE PASSWORD STORAGE
+                                                 
+
+
+                                                       DESCRIPTION OF STRENGTH SCORE
+more info
+more info
+more info
+more info
+more info
+more info
+more info
+more info
+more info
+
+
+                                                     Other SECURE PASSWORD STORAGE TECHNIQUES
 When storing passwords in your database you will want to use a secure hashing algorithm that is salted then hashed.
 We have implemented this for you, to use it just download the golang code and import it into your project.
 
@@ -96,15 +113,3 @@ func main() {
     // This isn't the best technique, but it is the simplest one for heroku
     db, errd = sql.Open("postgres", os.Getenv("DATABASE_URL"))
 }
-
-
-                                                       Another header
-more info
-more info
-more info
-more info
-more info
-more info
-more info
-more info
-more info
