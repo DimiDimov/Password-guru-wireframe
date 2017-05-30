@@ -63,7 +63,7 @@ you can then use these values to easily provide feedback to users, here is an ex
                                                  
 
 
-                                                       DESCRIPTION OF STRENGTH SCORE
+                                                  DESCRIPTION OF STRENGTH SCORE
 more info
 more info
 more info
@@ -75,7 +75,7 @@ more info
 more info
 
 
-                                                     Other SECURE PASSWORD STORAGE TECHNIQUES
+                                                 OTHER SECURE PASSWORD STORAGE TIPS
 When storing passwords in your database you will want to use a secure hashing algorithm that is salted then hashed.
 We have implemented this for you, to use it just download the golang code and import it into your project.
 
