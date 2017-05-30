@@ -53,7 +53,7 @@ var lengthBool = passguruReturnArray[1];
 var commonPassBool = passguruReturnArray[2];                                                                          
 var commonWordBool = passguruReturnArray[3];                                                                          
 var multipleCommonWordBool = passguruReturnArray[4];       
-var threeLettersInARowBool = passguruReturnArray[5];
+var threeLettersInARowBool = passguruReturnArray[5];                                                             
 var recommendationString = = passguruReturnArray[6]; 
 
 
