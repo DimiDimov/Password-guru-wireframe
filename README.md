@@ -30,7 +30,7 @@ You would grab the username and password with lines of code like this:
   var password = $("#password").val();
  
 From this point you will need to verify the strength of your users password to prevent their information being stolen
-You can simply call the Password Guru function check strength
+You can simply call the Password Guru function check strength                                                                          
 
   var strengthResult = guruStrengthTest(username, password);
   
@@ -47,12 +47,12 @@ A boolean that is 1 if and 0 if
 
 From here you should parse the array and store it into variables like this
 
-passguruReturnArray = guruStrengthTest(user1, pass1);
-strengthScore = passguruReturnArray[0];
-var lengthBool = passguruReturnArray[1];
-var commonPassBool = passguruReturnArray[2];
-var commonWordBool = passguruReturnArray[3];
-var multipleCommonWordBool = passguruReturnArray[4];
+passguruReturnArray = guruStrengthTest(user1, pass1);                                                                          
+strengthScore = passguruReturnArray[0];                                                                          
+var lengthBool = passguruReturnArray[1];                                                                          
+var commonPassBool = passguruReturnArray[2];                                                                          
+var commonWordBool = passguruReturnArray[3];                                                                          
+var multipleCommonWordBool = passguruReturnArray[4];                                                                          
 
 
 you can then use these values to easily provide feedback to users, here is an example of some javascript that does this:
