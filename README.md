@@ -1,24 +1,28 @@
 # Password-guru-wireframe
 Password Guru is a library that makes it simple to help your users make safe passwords. It provides quick feedback that helps them avoid frustration in the process of creating an account all while checking their passwords against attacks that real hackers use. 
 
-                                               Using Password Guru
-Simply download the source code from github, add it into your website file system and begin using the resources. There are 3 steps to using it. 
+                                                   Quick Setup
+To get Password guru set up to work on your site it just takes 4 easy steps:
 
+1. 
+Get the source code by either copy and pasting the FrontEndPassStrengthCheck.js or using git clone then dragging the file into your repository.
 
-1.
-Once the source code is in the files add in:
-<script src="FrontEndPassStrengthCheck.js"></script>
-in your html file for the create account page.
 
 2.
-From your main javascript that handles the create account page just call the method:
-passguruReturnArray = guruStrengthTest(username, password);
-and you will returned array will use our algorithms to determine a strength score value, a group of yes or no checks for the password (such as whether they password is long enough), as well as feedback you should give the user if they want to make their password stronger.
+In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.
+<script src="FrontEndPassStrengthCheck.js"></script>
 
-3. 
+3.
+From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:
+passguruReturnArray = guruStrengthTest(username, password);
+
+you will be returned an array that was determined using our algorithms. 
+
+4 
 Use the array to provide feedback to users as they type. Use the example below to see how to do this.
 
-EXAMPLE:
+                                                  Example
+
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
 
@@ -51,7 +55,8 @@ var commonWordBool = passguruReturnArray[3];
 var multipleCommonWordBool = passguruReturnArray[4];
 
 
-you can then 
+you can then use these values to easily provide feedback to users, here is an example of some javascript that does this:
+
 
                                                  SECURE PASSWORD STORAGE
 When storing passwords in your database you will want to use a secure hashing algorithm that is salted then hashed.
