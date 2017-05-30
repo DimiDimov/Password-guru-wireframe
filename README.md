@@ -34,8 +34,8 @@ You can simply call the Password Guru function check strength
 
   var strengthResult = guruStrengthTest(username, password);
   
-The strengthResult array that is returned is in the form 
-[
+The strengthResult array that is returned is in the form                                                                          
+[                                                                                                                                 
 strength score (a score between 0-100 that determines how hard the password is to be cracked, a very secure password would be over 80,
 A length boolean that is 1 if the password is over 8 characters and 0 if it is 8 or less,
 A boolean that is 1 if and 0 if,
@@ -43,7 +43,7 @@ A boolean that is 1 if and 0 if,
 A boolean that is 1 if and 0 if,
 A boolean that is 1 if and 0 if,
 A boolean that is 1 if and 0 if
-]
+]                                                                          
 
 From here you should parse the array and store it into variables like this
 
