@@ -52,10 +52,9 @@ You can simply call the Password Guru function check strength
 
 
                                                   DESCRIPTION OF STRENGTH SCORE
-How to use the score: if want users to have very secure passwords set the minimum score required to be 75. If you want the application
-to have decently secure passwords but be more user friendly then set the minimum score to be 50.
+How to use the score: if having very secure passwords is important to your site, then the recommended minimum score you should set your application to use is 75. If you want the application to have decently secure passwords but be more user friendly, the recommended minimum score is 50.
 
-Explaination of how score is built: When hackers look to crack password hashes or discover users passwords, they a variety of techniques
+Explaination of how score is built: When hackers look to crack password hashes or discover user passwords, they use multiple techniques
 such as brute forcing, comparisons to precomputed hashes, and making common substitutions and additions to common terms. The password
 strength score looks to tackle this problem by using multiple algorithms that each take into account the different ways that a password
 could be discovered. Attack defenses cover things such as rainbow tables, bruteforce techniques, dictionary attacks, shoulder surfing,
