@@ -40,10 +40,9 @@ You can then use these values to easily provide feedback to users.
 
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
-**
-  var username = $("#username").val();                                                                                    
-  var password = $("#password").val();
-**
+                                                                                                                                      
+**var username = $("#username").val();**                                                                                                 
+**var password = $("#password").val();**                                                                                        
 From this point you will need to verify the strength of your users password to prevent their information being stolen
 You can simply call the Password Guru function check strength                                                                          
 
