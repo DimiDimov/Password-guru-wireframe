@@ -59,52 +59,17 @@ you can then use these values to easily provide feedback to users, here is an ex
 
 
                                                   DESCRIPTION OF STRENGTH SCORE
-more info
-more info
-more info
-more info
-more info
-more info
-more info
-more info
-more info
+How to use the score: if want users to have very secure passwords set the minimum score required to be 75. If you want the application to have decently secure passwords but be more user friendly then set the minimum score to be 50.
+
+Explaination of how score is built: When hackers look to crack password hashes or discover users passwords they can do it in multiple ways. The password strength score looks to tackle this problem by using multiple algorithms that each take into account the different ways that a password could be discovered. Attack defenses cover things such as rainbow tables, bruteforce techniques, dictionary attacks, shoulder surfing, and other educated brute force guessing techniques.                                                          
 
 
                                                OTHER SECURE PASSWORD STORAGE TIPS
-When storing passwords in your database you will want to use a secure hashing algorithm that is salted then hashed.
-We have implemented this for you, to use it just download the golang code and import it into your project.
+When storing passwords in your database it is important to use a secure hashing algorithm that is salted then hashed.
 
-To store a new user simply call the golang register method from your javascript like this:
+The way to do this will depend on what backend languages and frameworks you are using but the simplest way to do this is to use a prexisting tool that has already been throughly tested. This can prevent simple mistakes leading to your passwords being vulnerable.
 
-function register(username, password){
-    $.post("/register", {username: $("#username").val(), password: $("#password").val()
-    });
+An example of a tool that would do this if your backend is node.js is provided here:
 
+https://www.npmjs.com/package/password-hash-and-salt
 
-From this point you will need to store the salted hash and salt into your database.
-To do this, go into the register.go where near the top of the code you will see two variables:
-
-
-var hashedPass string
-var salt int
-
-you will want to store both of these in your database. An example of this is shown here:
-
-import (
-
-   // this is Go's built-in sql library
-   "database/sql"
-)
-
-var (
-
-   // this is the pointer to the database we will be working with
-   // this is a "global" variable (sorta kinda, but you can use it as such)
-   db *sql.DB
-)
-
-func main() {
-    // here we want to open a connection to the database using an environemnt variable.
-    // This isn't the best technique, but it is the simplest one for heroku
-    db, errd = sql.Open("postgres", os.Getenv("DATABASE_URL"))
-}
