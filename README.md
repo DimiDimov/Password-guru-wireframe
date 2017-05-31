@@ -39,7 +39,7 @@ A boolean 1 if the password does not have a password from a common password list
 A boolean 1 if the password does not have a word from a common word list,                                                     
 A boolean 1 if the password is not made of two or more common words,                                                              
 A boolean 1 if the password does not contain more than 3 of the same letter in a row,
-A string recommendation that can be displayed to show to the user of how to make a stronger password,
+A string recommendation that can be displayed to show to the user of how to make a stronger password,                                   
 ]                                                                          
 
 From here you should parse the array and store it into variables like this                                        
