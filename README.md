@@ -24,16 +24,15 @@ The strengthResult array that is returned is in the form below.
 
 Indexes 1-5 are boolean, with a value of of true representing a failure in the category.                                                                          
 [                                                                                                                                 
-0: Overall strength score (explaination below),                                                                                   
-1: The password length is under 8 characters,                                 
-2: The password has a password from a common password list,                             
-3: The password has a word from a common word list,                                                             
+0: Overall strength score (explaination below),
+1: The password length is under 8 characters,
+2: The password has a password from a common password list,
+3: The password has a word from a common word list,
 4: The password does not contain too many of the same character,
 5: The password is not too similar to the username,
 6: A string recommendation that can be displayed to show to the user of how to make a stronger password. This 
-   recommendation is based on the users lowest indi
-   visual strength score.
-]                                                                          
+   recommendation is based on the users lowest individual strength score.
+   ]                                                                          
 
 You can then use these values to easily provide feedback to users. 
 
