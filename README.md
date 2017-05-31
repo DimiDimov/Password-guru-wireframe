@@ -32,7 +32,7 @@ You would grab the username and password with lines of code like this:
 From this point you will need to verify the strength of your users password to prevent their information being stolen
 You can simply call the Password Guru function check strength                                                                          
 
-**  var strengthResult = guruStrengthTest(username, password); **
+**var strengthResult = guruStrengthTest(username, password);**
   
 The strengthResult array that is returned is in the form                                                                          
 [                                                                                                                                 
@@ -46,16 +46,14 @@ A string recommendation that can be displayed to show to the user of how to make
 ]                                                                          
 
 From here you should parse the array and store it into variables like this                                        
-**
-  passguruReturnArray = guruStrengthTest(username, password);                                                                          
-  strengthScore = passguruReturnArray[0];                                                                          
-  var lengthBool = passguruReturnArray[1];                                                                          
-  var commonPassBool = passguruReturnArray[2];                                                                          
-  var commonWordBool = passguruReturnArray[3];                                                                          
-  var multipleCommonWordBool = passguruReturnArray[4];       
-  var threeLettersInARowBool = passguruReturnArray[5];                                                             
-  var recommendationString = = passguruReturnArray[6]; 
-**
+**passguruReturnArray = guruStrengthTest(username, password);**                                                                         
+**strengthScore = passguruReturnArray[0];**                                                                                     
+**var lengthBool = passguruReturnArray[1];**                                                                             
+**var commonPassBool = passguruReturnArray[2];**                                                                                
+**var commonWordBool = passguruReturnArray[3];**                                                                                   
+**var multipleCommonWordBool = passguruReturnArray[4];**                                                         
+**var threeLettersInARowBool = passguruReturnArray[5];**                                                             
+**var recommendationString = = passguruReturnArray[6];**                                     
 
 you can then use these values to easily provide feedback to users, here is an example of some javascript that does this:
 
