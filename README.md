@@ -2,7 +2,7 @@
 Password Guru is a library that makes it simple to help your users make safe passwords. It provides quick feedback that helps them avoid frustration in the process of creating an account all while checking their passwords against attacks that real hackers use. 
 
                                                        QUICK SETUP
-To get Password guru set up to work on your site it just takes 4 easy steps:
+To get Password guru set up to work on your site it just takes 3 easy steps to access the algorithms then a quick implementation.
 
                                                             1
 Get the source code by either copy and pasting the **FrontEndPassStrengthCheck.js** or using git clone then dragging the file into your repository.
@@ -18,9 +18,7 @@ From your main javascript that handles the create account page just call the met
 
 you will be returned an array that was determined using our algorithms. 
 
-4.Use the array to provide feedback to users as they type. Use the example below to see how to do this.
-
-                                                        EXAMPLE
+                                                   EXAMPLE OF IMPLEMENTATION
 
 Lets say that you are using JQuery to extract your HTML inputs to use in your javascript.
 You would grab the username and password with lines of code like this:
