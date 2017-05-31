@@ -4,13 +4,16 @@ Password Guru is a library that makes it simple to help your users make safe pas
                                                        QUICK SETUP
 To get Password guru set up to work on your site it just takes 4 easy steps:
 
-1.Get the source code by either copy and pasting the **FrontEndPassStrengthCheck.js** or using git clone then dragging the file into your repository.
+                                                            1
+Get the source code by either copy and pasting the **FrontEndPassStrengthCheck.js** or using git clone then dragging the file into your repository.
 
 
-2.In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.                                                 
+                                                            2
+In your html include a reference to  FrontEndPassStrengthCheck.js like shown below.                                                 
 **<script src="FrontEndPassStrengthCheck.js"></script>**
 
-3.From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:                                                                                                   
+                                                            3
+From your main javascript that handles the create account page just call the method guruStrengthTest and pass in the user's username and password as shown below:                                                                                                   
 **passguruReturnArray = guruStrengthTest(username, password);**
 
 you will be returned an array that was determined using our algorithms. 
